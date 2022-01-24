@@ -1,0 +1,12 @@
+
+use classicmodels;
+
+select * from orders;
+select * from customers
+inner join orders on customers.customerNumber=orders.customerNumber;
+
+
+select * from customers
+left join orders on customers.customerNumber=orders.customerNumber;
+
+select count(*) as 'totales' from orders
